@@ -6,12 +6,44 @@
   margin: 0;
   padding: 0;
   font-family: 'Bebas Neue', cursive;
+  letter-spacing: 3px;
+  color: white;
 }
 
 header {
   width: 100%;
+  height: 100vh;
+  /* for browser who don't suport gradient */
+  background-color: #009172;
+  /* gradient */
+  background-image:
+    radial-gradient(
+      circle at right,
+      #00FA9B,
+      #009172 50%
+    );
+}
+
+.main-nav {
+  list-style: none;
   height: 10vh;
-  background-color: #01151A;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav li {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 5%;
+}
+
+.main-nav li a {
+  text-decoration: none;
 }
 
 /* defines the width for every secton. and displayes as flex */
@@ -23,23 +55,16 @@ header {
 
 .sec-1 {
   height: 90vh;
-  /* for browser who don't suport gradient */
-  background-color: #010A09;
-  /* gradient */
-  background-image:
-    radial-gradient(
-      circle at right,
-      #00FA9B,
-      #009172 50%
-    );
 }
 
 .mainCall {
   margin: 10%;
   width: 50%;
-  color: white;
-  font-size: large;
-  letter-spacing: 2px;
+  font-size: x-large;
+}
+
+.mainCall h2 {
+  padding: 0 0 7% 0;
 }
 
 .mainFig {
