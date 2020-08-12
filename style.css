@@ -1,0 +1,54 @@
+/* some green: #00FA9B*/
+/* black-blue: #01151A*/
+/* black-green: #010A09*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', cursive;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: #01151A;
+}
+
+/* defines the width for every secton. and displayes as flex */
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec-1 {
+  height: 90vh;
+  /* for browser who don't suport gradient */
+  background-color: #010A09;
+  /* gradient */
+  background-image:
+    radial-gradient(
+      circle at right,
+      #00FA9B,
+      #009172 50%
+    );
+}
+
+.mainCall {
+  margin: 10%;
+  width: 50%;
+  color: white;
+  font-size: large;
+  letter-spacing: 2px;
+}
+
+.mainFig {
+  margin: 10%;
+  margin-left: 0;
+  width: 40%;
+}
+
+.ideas {
+  max-width: 100%;
+  max-height: 100%;
+}
