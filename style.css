@@ -46,11 +46,12 @@ header {
   text-decoration: none;
 }
 
-/* defines the width for every secton. and displayes as flex */
+/* defines the width for every section. and displayes as flex */
 .section {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .sec-1 {
@@ -70,7 +71,7 @@ header {
 .mainFig {
   margin: 10%;
   margin-left: 0;
-  width: 40%;
+  width: 45%;
 }
 
 .ideas {
