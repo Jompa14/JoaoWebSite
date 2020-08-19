@@ -24,9 +24,6 @@ header {
     );
 }
 
-a {
-  color: white;
-}
 .main-nav {
   list-style: none;
   height: 10vh;
@@ -46,9 +43,15 @@ a {
   font-size: large;
 }
 
-.main-nav li a {
-  text-decoration: none;
+.link {
 }
+
+.link::before {
+  content: "";
+  background-color: white;
+  height: 1px;
+}
+
 
 /* defines the width for every section. and displayes as flex */
 .section {
