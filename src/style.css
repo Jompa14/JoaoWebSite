@@ -43,16 +43,6 @@ header {
   font-size: large;
 }
 
-.link {
-}
-
-.link::before {
-  content: "";
-  background-color: white;
-  height: 1px;
-}
-
-
 /* defines the width for every section. and displayes as flex */
 .section {
   width: 100%;
@@ -79,6 +69,33 @@ header {
 
 .mainCall p {
   word-spacing: 0.3em;
+}
+
+.link {
+   position: relative;
+   z-index: 0;
+   overflow: hidden;
+   display: inline-block;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
+}
+
+.link::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(calc(100% - 2px));
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(60deg, #6a2efb 0%, #c916ff 100%);
+   transition: transform .25s ease-out;
+}
+
+.link:hover::before {
+   transform: translateY(0);
+   transition: transform .25s ease-out;
 }
 
 .fa-code {
