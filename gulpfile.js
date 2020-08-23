@@ -4,6 +4,12 @@ var gulp      = require('gulp'),
     server    = require('tiny-lr')();
     imagemin  = require('gulp-imagemin');
 
+const { series } = require('gulp')
+gulp.task('directories', function () {
+  return gulp.src('*.*', {read: false})
+    .pipe(gulp.dest('.dist'))
+});
+
 //pipe the modules from gulp in styles.css
 gulp.task('update', function() {
   gulp.src('src/style.css')
@@ -29,3 +35,5 @@ exports.default = () => (
         .pipe(imagemin())
         .pipe(gulp.dest('dist/images'))
 );
+
+exports.default = series(directories);

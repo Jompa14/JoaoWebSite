@@ -43,6 +43,45 @@ header {
   font-size: large;
 }
 
+.effect {
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.effect:before {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  bottom: 0;
+  transform:  translateX(-100%);
+  }
+
+.effect:after {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  top: 0;
+  transform:  translateX(100%);
+  }
+
+.effect:hover:before {
+  transform:  translateX(0);
+}
+
+.effect:hover:after {
+  transform:  translateX(0);
+}
+
 /* defines the width for every section. and displayes as flex */
 .section {
   width: 100%;
@@ -74,6 +113,7 @@ header {
 .link {
    position: relative;
    z-index: 0;
+   padding: 0 2px;
    overflow: hidden;
    display: inline-block;
    vertical-align: bottom;
@@ -129,8 +169,11 @@ header {
 }
 
 .aboutMe {
+  font-size: 1.3em;
+  line-height: 1.3em;
   margin: 10%;
   width: 60%;
+  text-align: right;
 }
 
 .aboutFig {
@@ -146,9 +189,11 @@ header {
   align-items: center;
   padding-bottom: 5%;
 }
+
 .prog {
   font-size: 2.3em;
 }
+
 .line {
   display: block;
   background-color: #fff;
@@ -158,21 +203,15 @@ header {
 }
 
 .sec-3 {
-  height: max-content;
-  display: flex;
-  flex-direction: column;
-  /* for browser who don't suport gradient */
-  background-color: #5e08e7;
-  /* gradient */
-  background-image:
-    linear-gradient(to right rgb(127, 10, 236), #5e08e7);
+
 }
 
-.sec-3 img {
-  max-width: 100%;
-  max-height: 100%;
+/* Tablets */
+@media only screen and (max-width: 768px) {
+
 }
 
-.banner {
-  width: 80%;
+/* Smartphones */
+@media screen and (max-width: 600px) {
+
 }
