@@ -97,6 +97,7 @@ header {
 
 .sec-1 {
   height: 90vh;
+  box-sizing: border-box;
 }
 
 .mainCall {
@@ -211,12 +212,17 @@ header {
 /* already has styling from .section line 90 */
 .sec-3 {
   background-color: #5e08e7;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%
 }
 
 .project {
   box-sizing: border-box;
   background-color: #fff;
   display: flex;
+  width: 70%;
   justify-content: space-around;
   flex-direction: column;
   text-align: center;
@@ -227,7 +233,7 @@ header {
 
 .project:hover {
   border: solid 3px rgb(255, 73, 237);
-  background-color: rgb(237, 237, 237);
+  /* background-color: rgb(237, 237, 237); */
 }
 
 .project figure {
@@ -237,9 +243,7 @@ header {
 }
 
 .project img {
-  width: 100%;
-  max-height: 199px;
-  min-height: 199px;
+  width: 90%;
 }
 
 .project h3 {
@@ -253,6 +257,14 @@ header {
   padding: 5%;
 }
 
+.project .link {
+  color: #5e08e7;
+}
+
+.project .link:hover{
+  color: #fff;
+}
+
 
 /* Small screns */
 @media only screen and (max-width: 900px) {
@@ -263,9 +275,42 @@ header {
 /* Tablets */
 @media only screen and (max-width: 768px) {
 
+
 }
 
 /* Smartphones */
 @media screen and (max-width: 600px) {
+  .main-nav li:nth-child(2n) {
+    display: none;
+  }
+
+  .main-nav {
+  text-align: right;
+  }
+
+  .main-nav li {
+    font-size: small;
+  }
+
+  .sec-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainCall h1 {
+    font-size: 1.2em;
+    width: 100%;
+    padding: 0;
+    margin-top: 5%;
+  }
+
+  .mainCall p{
+    display: none;
+  }
+
+  .mainFig {
+    width: 80%;
+    margin: 5%;
+  }
 
 }
