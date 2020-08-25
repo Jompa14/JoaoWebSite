@@ -227,7 +227,7 @@ header {
   flex-direction: column;
   text-align: center;
   border: solid 3px #5e08e7;
-  border-radius: 5%;
+  border-radius: 20px;
   margin: 5%;
 }
 
@@ -267,27 +267,11 @@ header {
 
 
 /* Small screns */
-@media only screen and (max-width: 900px) {
-  .project {
-    margin: 2%;
-  }
-}
+/* @media only screen and (max-width: 900px) {
+
+} */
 /* Tablets */
-@media only screen and (max-width: 768px) {
-
-
-}
-
-/* Smartphones */
-@media screen and (max-width: 600px) {
-  .main-nav li:nth-child(2n) {
-    display: none;
-  }
-
-  .main-nav {
-  text-align: right;
-  }
-
+@media only screen and (max-width: 630px) {
   .main-nav li {
     font-size: small;
   }
@@ -297,9 +281,14 @@ header {
     flex-direction: column;
   }
 
-  .mainCall h1 {
-    font-size: 1.2em;
+  .mainCall {
     width: 100%;
+    margin: 10%;
+    text-align: center;
+  }
+
+  .mainCall h1 {
+    font-size: 2em;
     padding: 0;
     margin-top: 5%;
   }
@@ -311,6 +300,56 @@ header {
   .mainFig {
     width: 80%;
     margin: 5%;
+  }
+
+}
+
+/* Smartphones */
+@media screen and (max-width: 438px) {
+  .main-nav li:first-child {
+    display: none;
+  }
+
+  .main-nav li:nth-child(2) {
+    display: none;
+  }
+
+  .main-nav li {
+    font-size: small;
+  }
+
+  .sec-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainCall {
+    width: 100%;
+    margin: 10%;
+    text-align: center;
+  }
+
+  .mainCall h1 {
+    font-size: 2em;
+    padding: 0;
+    margin-top: 5%;
+  }
+
+  .mainCall p{
+    display: none;
+  }
+
+  .mainFig {
+    width: 80%;
+    margin: 5%;
+  }
+
+  .aboutMe {
+    font-size: 1em;
+  }
+
+  .aboutFig {
+    display: none;
   }
 
 }
