@@ -289,7 +289,6 @@ header {
   }
 
   .mainCall h1 {
-    font-size: 2em;
     padding: 0;
     margin-top: 5%;
   }
@@ -320,7 +319,7 @@ header {
   }
 
   .main-nav li {
-    font-size: x-small;
+    font-size: small;
   }
 
   .sec-1 {
@@ -332,12 +331,6 @@ header {
     width: 100%;
     margin: 10%;
     text-align: center;
-  }
-
-  .mainCall h1 {
-    font-size: 2em;
-    padding: 0;
-    margin-top: 5%;
   }
 
   .mainCall p{
