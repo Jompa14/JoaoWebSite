@@ -266,11 +266,32 @@ header {
   color: #fff;
 }
 
+.footer {
+  padding: 5% 0;
+  background-color: #5e08e7;
+}
+
+.footer a, p {
+  letter-spacing: 1px;
+}
+
+.rights {
+  font-style: italic;
+}
+
+.icons a {
+  display: block;
+}
 
 /* Small screns */
-/* @media only screen and (max-width: 900px) {
-
-} */
+@media only screen and (max-width: 900px) {
+  .rights {
+    font-size: small;
+  }
+  .coded {
+    font-size: small;
+  }
+}
 /* Tablets */
 @media only screen and (max-width: 630px) {
   .main-nav li {
@@ -302,6 +323,21 @@ header {
     margin: 5%;
   }
 
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer div {
+    margin: 2% 0;
+  }
+
+  .rights {
+    font-size: medium;
+  }
+
+  .coded {
+    font-size: medium;
+  }
 }
 
 /* Smartphones */
@@ -349,5 +385,4 @@ header {
   .aboutFig {
     display: none;
   }
-
 }
