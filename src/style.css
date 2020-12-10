@@ -275,6 +275,10 @@ header {
   letter-spacing: 1px;
 }
 
+.footer p {
+  padding: 3px;
+}
+
 .rights {
   font-style: italic;
 }
