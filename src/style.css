@@ -249,8 +249,11 @@ header {
 }
 
 .project:hover {
-  border: solid 3px rgb(255, 73, 237);
-  /* background-color: rgb(237, 237, 237); */
+
+  box-shadow:
+        0 0px 15px 0 rgba(0, 0, 0, 0.67), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
 }
 
 .project figure {
