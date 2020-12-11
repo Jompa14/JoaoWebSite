@@ -230,18 +230,23 @@ header {
 .sec-3 {
   background-color: #5e08e7;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap-reverse;
   box-sizing: border-box;
   width: 100%
+}
+
+.basis-500-grow-1 {
+  flex-grow: 1;
+  flex-basis: 400px;
 }
 
 .project {
   box-sizing: border-box;
   background-color: #fff;
   display: flex;
-  width: 70%;
-  justify-content: space-around;
   flex-direction: column;
+  max-width: 70%;
+  justify-content: space-around;
   text-align: center;
   border: solid 3px #5e08e7;
   border-radius: 20px;
@@ -249,7 +254,6 @@ header {
 }
 
 .project:hover {
-
   box-shadow:
         0 0px 15px 0 rgba(0, 0, 0, 0.67), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         -webkit-transform: translateY(-8px);
@@ -258,7 +262,7 @@ header {
 
 .project figure {
   box-sizing: border-box;
-  width: 90%;
+  max-width: 90%;
   margin: 5%;
 }
 
