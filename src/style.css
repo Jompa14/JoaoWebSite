@@ -49,7 +49,7 @@ header {
   display: flex;
   justify-content: space-around;
   margin: 0 5%;
-  font-size: large;
+  font-size: 1.5em;
 }
 
 .effect {
@@ -265,14 +265,18 @@ header {
 }
 
 .project h3 {
-  font-size: 1.3em;
+  font-size: 1.6em;
   color: #5e08e7;
   padding: 2%;
 }
 
 .project p {
+  font-size: 1.3em;
   color: #5e08e7;
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 4%;
 }
 
 .project .link {
@@ -290,6 +294,7 @@ header {
 
 .footer a, p {
   letter-spacing: 1px;
+  font-size: 1.3em;
 }
 
 .footer p {
@@ -311,6 +316,10 @@ header {
   }
   .coded {
     font-size: small;
+  }
+
+  .project p, a{
+    font-size: 1em;
   }
 }
 /* Tablets */
