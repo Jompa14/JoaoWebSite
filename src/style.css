@@ -1,4 +1,4 @@
-/* some green: #00FA9B*/
+
 
 * {
   margin: 0;
@@ -8,6 +8,10 @@
   color: white;
   text-decoration: none;
   font-size: 1em;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #container {
@@ -182,6 +186,19 @@ header {
   width: 60%;
   text-align: right;
 }
+
+.transition {
+  transition-timing-function: ease-out;
+  transition-property: opacity, transform;
+  transition-duration: 2s;
+}
+
+.transition-visible {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
 
 .aboutFig {
   margin: 10%;
