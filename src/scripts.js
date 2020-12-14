@@ -1,17 +1,18 @@
-appear({
-  init: function init(){
-    console.log('dom is ready');
-  },
-  elements: function elements(){
-    // work with all elements with the class "track"
-    return document.getElementsByClassName('track');
-  },
-  appear: function appear(el){
-    console.log('visible', el);
-  },
-  disappear: function disappear(el){
-    console.log('no longer visible', el);
-  },
-  bounds: 200,
-  reappear: true
-});
+(function() {
+    emailjs.init('user_5sB8Lh1XA1wKFsqqsWOqx');
+})();
+
+window.onload = function() {
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+     event.preventDefault();
+     // generate a five digit number for the contact_number variable
+     this.contact_number.value = Math.random() * 100000 | 0;
+     // these IDs from the previous steps
+     emailjs.sendForm('contact_service', 'contact_form', this)
+         .then(function() {
+             console.log('SUCCESS!');
+         }, function(error) {
+             console.log('FAILED...', error);
+         });
+  });
+}
