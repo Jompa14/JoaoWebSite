@@ -23,10 +23,10 @@ document.getElementById("contact-button").addEventListener("click", emailEnviado
 function emailEnviado() {
   const button = document.getElementById("contact-button");
   button.disabled = true;
-  const textarea = document.getElementById("contact-textarea");
-  textarea.value = 'Thanks for your message!';
   setTimeout(
     function() {
       button.disabled = false;
-    }, 5000);
+      const textarea = document.getElementById("contact-textarea");
+      textarea.value = 'Thanks for your message!';
+    }, 2000);
 }
